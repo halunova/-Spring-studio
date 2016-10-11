@@ -12,9 +12,9 @@
 */
 
 
-Route::get('/', function () {
+Route::get('/','BaseController@getIndex'); /*{
     return view('welcome');
 });
-
-Route::get('/test', function () { return  'Hello world'; });
-Route::get('user/{name?}', function ($name=0) { return  'User'. $name; })->where(['name'=>'[A-Za-z0-9]+']); //перехватываем буквы числа
+*/
+//Route::get('/test', function () { return  'Hello world'; });
+//Route::get('user/{name?}', function ($name=0) { return  'User'. $name; })->where(['name'=>'[A-Za-z0-9]+']); //перехватываем буквы числа
