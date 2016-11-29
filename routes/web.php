@@ -12,9 +12,10 @@
 */
 
 
-Route::get('/','BaseController@getIndex'); /*{
-    return view('welcome');
-});
-*/
-//Route::get('/test', function () { return  'Hello world'; });
-//Route::get('user/{name?}', function ($name=0) { return  'User'. $name; })->where(['name'=>'[A-Za-z0-9]+']); //перехватываем буквы числа
+Route::get('/','BaseController@getIndex'); 
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+Route::post('/home', 'HomeController@postIndex');
+//default route всегда последний
+Route::get('/{id}', 'StaticController@getIndex');

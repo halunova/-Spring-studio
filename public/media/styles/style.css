@@ -1,1 +1,5 @@
-body {background:aqua; color:blue;}
+body {
+	color:blue;
+background: url('../img/font.jpg');
+background-size:100%;
+}
