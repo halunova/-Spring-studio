@@ -1,5 +1,58 @@
-body {
-	color:blue;
-background: url('../img/font.jpg');
-background-size:100%;
+.menu{
+	float:right;
+	width:200px;
+}
+
+.product{
+	border-bottom: solid 2px lightgrey;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+.footercontact{
+	margin-top: 50px;
+	font-size: 20px;
+	color: black;
+}
+.panel-heading{
+	font-size: 40px;
+	color: black;
+	font-family: Times New Roman;
+	
+}
+.name{
+	margin-top:-250px;
+	margin-left:500px;
+	font-size: 40px;
+	color: black;
+	font-family: Times New Roman;
+	
+}
+
+.left{
+	float:left;
+margin-top:50px;
+margin-left:5px;
+width:250px;
+margin-right:20px;
+background:white;
+}
+.left h2 {
+width:230px;
+height:40px;
+font:normal 25px Times New Roman, Helvetica, sans-serif;
+color:black;
+padding-left:25px;
+line-height:30px;
+margin-top:20px;}
+.left ul{ list-style:none;}
+.left a{text-decoration:none;
+display:block;
+width:170px;
+font:normal 20px Times New Roman, Helvetica,  sans-serif;
+color:black;
+margin-left:15px;
+border-bottom:dashed 1px #bababa;
+padding:11px 0 11px 0;}
+.carousel-inner{
+	padding-left:-275px;
 }

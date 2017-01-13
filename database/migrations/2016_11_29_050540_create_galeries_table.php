@@ -21,8 +21,7 @@ class CreateGaleriesTable extends Migration
 			$table->string('picture_small');
 			$table->enum('showhide',array('show','hide'));
             $table->timestamps();
-        });
-    }
+        });  }
 
     /**
      * Reverse the migrations.

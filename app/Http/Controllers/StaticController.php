@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Maintext;
 class StaticController extends Controller
 {
+
 	public function getIndex($id=null)
 	{
 		$text=Maintext::where('url', $id)->first();
