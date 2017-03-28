@@ -19,7 +19,10 @@ Route::get('/home/delete/{id}','HomeController@getDelete');
 Route::get('/home/edit/{id}','HomeController@getEdit');
 Route::post('/home/edit/{id}', 'HomeController@postEdit');
 Route::get('/photo', 'PhotoController@index');
-Route::get('/email', 'HomeController@email');
+Route::get('/email', 'EmailController@email');
+Route::get('/comment', 'CommentController@index');
+Route::post('/comment', 'CommentController@postIndex');
+Route::get('/category/{id}', 'PhotoController@getCategory');
 //default route всегда последний
 Route::get('/{id}', 'StaticController@getIndex');
 

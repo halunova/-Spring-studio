@@ -16,29 +16,29 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox" align=center>
+  <div class="carousel-inner" role="listbox" align=center >
     <div class="item active">
-      <img src="/media/img/5.jpg" alt="Наши работы">
+      <img src="/media/img/5.jpg" height='360px' alt="Наши работы">
       <div class="carousel-caption">
       </div>
     </div>
-    <div class="item">
-      <img src="/media/img/2.jpg" alt="Наши работы">
+    <div class="item"  height='360px'>
+      <img src="/media/img/2.jpg" height='360px' alt="Наши работы">
       <div class="carousel-caption">
       </div>
     </div>
-	 <div class="item">
-      <img src="/media/img/3.jpg" alt="Наши работы">
+	 <div class="item"  height='360px'>
+      <img src="/media/img/3.jpg" height='360px' alt="Наши работы">
       <div class="carousel-caption">
       </div>
     </div>
-	 <div class="item">
-      <img src="/media/img/4.jpg" alt="Наши работы">
+	 <div class="item"  height='360px'>
+      <img src="/media/img/4.jpg" height='360px' alt="Наши работы">
       <div class="carousel-caption">
       </div>
     </div>
-	 <div class="item">
-      <img src="/media/img/1.jpg" alt="Наши работы">
+	 <div class="item"  height='360px'>
+      <img src="/media/img/1.jpg" height='360px' alt="Наши работы">
       <div class="carousel-caption">
       </div>
     </div>

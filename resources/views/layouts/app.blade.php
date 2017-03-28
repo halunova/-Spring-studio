@@ -11,9 +11,9 @@
     <title>{{ config('app.name', 'Главная') }}</title>
 
     <!-- Styles -->
-    <link href="media/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/media/styles/style.css" rel="stylesheet">
-	<script src="/media/js/jquery-3.1.1.min.js"> </script>
+    <link href="{{asset ('media/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{asset ('/media/styles/style.css')}}" rel="stylesheet">
+	<script src="{{asset ('/media/js/jquery-3.1.1.min.js')}}"> </script>
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
@@ -22,7 +22,7 @@
     </script>
 	
 </head>
-<body style="background:url({{$bg}})"> 
+<body style="background:url({{asset($bg)}})"> 
 
 
     <nav class="navbar navbar-default navbar-static-top">
@@ -47,7 +47,12 @@
 				<a href="/photo" class="navbar-brand">
 				Наши работы
 				</a>
-				
+				<a href="/comment" class="navbar-brand">
+				Комментарии
+				</a>
+				<a href="/email" class="navbar-brand">
+				От создателей:)
+				</a>
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -97,32 +102,21 @@
 <div class="left">
 		<h2>Категории</h2>
 		<ul>
-			<li><a href="/photo">Букеты</a></li>
-			<li><a href="/photo">Бокалы</a></li>
-			<li><a href="/photo">Бутоньерки</a></li>
-			<li><a href="/photo">Подвязки</a></li>
-			<li><a href="/photo">Семейный очаг</a></li>
-			<li><a href="/photo">Свадебное шампанское</a></li>
-			<li><a href="/photo">Подушечки для колец</a></li>
-			<li><a href="/photo">Наборы</a></li>
+		@foreach ($cats as $one)
+		<li><a href="{{asset('/category/'.$one->id)}}">{{$one->name}}</a></li>
+		@endforeach
 		</ul>
 	</div>
     @yield('content')
 <div class="footer"align=center>
 			<div class="footercontact"> Наши контакты </div>
-				<a href="https://vk.com/vesnaby"><img src="media/img/vk.png" /></a>
-				<a href=""><img src="media/img/twitter.png" /></a>
-				<a href=""><img src="media/img/instagram.png" /></a>
+				<a href="https://vk.com/vesnaby"><img src="{{asset ('media/img/vk.png')}}" /></a>
+				<a href=""><img src="{{asset ('media/img/twitter.png')}}" /></a>
+				<a href=""><img src="{{asset ('media/img/instagram.png')}}" /></a>
 
 	</div>
     <!-- Scripts -->
     <script src="/js/app.js"></script>
- <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Язык страницы<span class="caret"></span></a>
-        <ul class="dropdown-menu" role="menu">
-            <li><a href="#">русский</a></li>
-			<li><a href="#">english</a></li>
-		</ul>
- </li>	
+
 </body>
 </html>

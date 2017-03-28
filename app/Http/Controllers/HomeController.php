@@ -8,7 +8,6 @@ use App\Http\Requests;
 use App\galery;
 use Auth;
 use Appp\Libs\Imag;
-use Illuminate\Support\Facades\Mail;
 
 
 class HomeController extends Controller
@@ -18,16 +17,6 @@ class HomeController extends Controller
     {
         $this->middleware('auth');
 		\Config::set('site.bg','/media/img/font1.jpg');
-    }
-
-	  public function email()
-    {
-	
-	Mail::send('test',['fio'=>'Vika'], function($message)
-	{
-		$message->to('halunova97@gmail.com', 'Виктория Голунова')->subject('Welcome!');
-	});
-	return 'Message sent';
     }
     public function index()
     {

@@ -16,4 +16,8 @@ class PhotoController extends BaseController
 		$all = Galery::orderBy('id','DESC')->paginate(30);
         return view('photo')->with('all', $all);
     }
+	 public function getCategory($id=null){
+		$all=Galery::where('cat_id',$id)->paginate(10);
+		return view('photo')->with('all',$all);
+	 }
 }

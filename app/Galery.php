@@ -8,6 +8,7 @@ class Galery extends Model
 {
     protected $fillable= [
 	'user_id',
+	'cat_id',
 	'name',
 	'picture',
 	'picture_small',

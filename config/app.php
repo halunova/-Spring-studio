@@ -179,6 +179,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 		App\Providers\ImageMyProvider::class,
 		Intervention\Image\ImageServiceProvider::class,
+		Frozennode\Administrator\AdministratorServiceProvider::class
     ],
 
     /*
