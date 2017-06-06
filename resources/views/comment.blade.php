@@ -2,7 +2,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-10">
                 <div class="panel panel-default">
                     <div class="panel-heading">Комментарии</div><br>
 							<div class='comments'>
@@ -23,11 +23,7 @@
                             {{csrf_field()}}
                             <div class="form-group">
 								<h3> Ваш комментарий </h3>
-                                <label for='name'> Ваше имя </label>
-                                <input type='text' name='name' id='name' class="form-control" />
-                            </div>
-                            <div class="form-group">
-                                <label for='text'> Комментарий </label>
+                               
                                 <input type='text' name='text' id='text' class="form-control"/> <br>
                             </div>
                             <button type="submit" class="btn btn-default">Добавить</button>

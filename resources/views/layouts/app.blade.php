@@ -12,8 +12,16 @@
 
     <!-- Styles -->
     <link href="{{asset ('media/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-	<link href="{{asset ('/media/styles/style.css')}}" rel="stylesheet">
+	<link href="{{asset ('/media/styles/styles.css')}}" rel="stylesheet">
+	<link href="{{asset ('/media/styles/left-nav-style.css')}}" rel="stylesheet">
 	<script src="{{asset ('/media/js/jquery-3.1.1.min.js')}}"> </script>
+
+<!-- Scripts for STRELKA NAVERH -->
+    <script src="{{asset ('/media/js/jquery-2.2.3.js')}}"> </script>
+
+<script src="{{asset ('/media/js/owl.carousel.min.js')}}"> </script>
+
+<script src="{{asset ('/media/js/functions.js')}}"> </script>
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
@@ -22,7 +30,21 @@
     </script>
 	
 </head>
-<body style="background:url({{asset($bg)}})"> 
+<body style="background-color: #C0E7F1;"> 
+ <div class="allcontent">   
+	<input type="checkbox" id="nav-toggle-left-menu" hidden>
+	 <nav class="navleftmenu">
+	 <label for="nav-toggle-left-menu" class="nav-toggle-left-menu" onclick></label>
+	  <h2 class="logo"> 
+            Категории
+        </h2>
+        <ul>
+		@foreach ($cats as $one)
+		<li><a href="{{asset('/category/'.$one->id)}}">{{$one->name}}</a></li>
+		@endforeach
+        </ul>
+    </nav>
+	<div class="mask-content"></div>
 
 
     <nav class="navbar navbar-default navbar-static-top">
@@ -50,8 +72,11 @@
 				<a href="/comment" class="navbar-brand">
 				Комментарии
 				</a>
-				<a href="/email" class="navbar-brand">
-				От создателей:)
+				<a href="/price" class="navbar-brand">
+				Price-лист
+				</a>
+				<a href="/place" class="navbar-brand" id="rightafterSAMOVIVOZ">
+				Самовывоз
 				</a>
             </div>
 
@@ -75,7 +100,7 @@
 
                             <ul class="dropdown-menu" role="menu">
 								<li>
-                                    <a href="{{ asset('/home') }}">
+                                    <a href="{{ asset('/home') }}" class="borderafterdropmenu">
                                         Добавить товар
                                     </a>
                                 </li>
@@ -99,24 +124,56 @@
             </div>
         </div>
     </nav>
-<div class="left">
-		<h2>Категории</h2>
-		<ul>
-		@foreach ($cats as $one)
-		<li><a href="{{asset('/category/'.$one->id)}}">{{$one->name}}</a></li>
-		@endforeach
-		</ul>
-	</div>
+	
+	
+	
+	
+	
+	
+
+
+<div class="ourcontent">
     @yield('content')
-<div class="footer"align=center>
-			<div class="footercontact"> Наши контакты </div>
-				<a href="https://vk.com/vesnaby"><img src="{{asset ('media/img/vk.png')}}" /></a>
-				<a href=""><img src="{{asset ('media/img/twitter.png')}}" /></a>
-				<a href=""><img src="{{asset ('media/img/instagram.png')}}" /></a>
 
-	</div>
-    <!-- Scripts -->
-    <script src="/js/app.js"></script>
-
+<div class="ourfooter">
+    <section id="contact-section">
+			<div class="contact-info">
+				<div class="container">
+					<div class="title-section">
+						<span></span>
+					</div>
+					<div class="contact-info-box">
+						<div class="row">
+							<div class="col-md-3">
+							
+								<h2>Наш офис</h2>
+								<p>795 Fake Ave, Door 6 <br> Wonderland</p>
+							</div>
+							<div class="col-md-3">
+							
+								<h2>Телефоны</h2>
+								<p> Phone: +351123456789 <br> Fax: +351987654321</p>
+							</div>
+							<div class="col-md-3">
+								
+								<h2>Email</h2>
+								<p> info@marble.com <br> support@marble.com</p>
+							</div>
+                            <div class="col-md-2">
+							
+								<h2>Мы в Контакте</h2>
+								<a href="https://vk.com/vesnaby"><img src="{{asset ('media/img/vk.png')}}" /></a>
+							</div>
+							<div class="col-md-1">
+								
+								<h2>Instagram</h2>
+								<a href=""><img src="{{asset ('media/img/instagram.png')}}" /></a>
+							</div>
+				</div>
+			</div>
+        </section>
+</div>
+</div>
+<a href="#" id="back-top"><i class="fa fa-angle-up fa-2x"></i></a>
 </body>
 </html>

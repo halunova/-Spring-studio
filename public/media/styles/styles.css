@@ -1,0 +1,464 @@
+*{margin: 0; padding: 0;}
+
+.product{ 
+border-bottom:solid 2px lightgrey; 
+margin-bottom: 20px; 
+padding: 10px; 
+}
+.allcontent{display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.ourcontent{
+	flex: 1 0 auto;
+}
+.ourfooter{
+	flex: 0 0 auto;
+}
+.galery{margin-left: 55px;}
+.outputtovar{margin-left: 25%;}
+
+
+
+.menu{ 
+float:right; 
+width:200px; 
+}
+.pricetable{margin-left: 470px; margin-bottom: 0px;}
+.panel-heading{
+	font-size: 40px;
+	color: black;
+	font-family: Times New Roman;
+
+}
+.navbar-default{
+	/*background-color: #BDF1BC;*/
+	width: 100%;
+	/*height: 110px;*/
+	margin-bottom: 20px;
+	background: url(../images/templatemo_top.png) repeat-x;
+}
+.navbar-default a{
+	padding-right:30px;
+	padding-left:31px;
+	line-height:45px;}
+
+	#app-navbar-collapse a{
+		font:normal 16px Arial, Helvetica, sans-serif;
+		line-height:45px;
+	}
+
+.navbar-header a{
+font-size: 20px;}
+
+.borderafterdropmenu{
+border-bottom:dashed 1px #bababa;
+}
+
+.name{
+	margin-top:-250px;
+	margin-left:500px;
+	font-size: 40px;
+	color: black;
+	font-family: Times New Roman;
+
+}
+.item{
+	height:350px;
+}
+
+
+
+.carousel-inner{
+	padding-left:-275px;
+}
+.comments{
+margin-left:20px;
+margin-right:20px;
+}
+
+
+
+
+
+
+
+/* Prise list*/
+.simple-little-table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:20px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#eaebec;
+	margin:20px;
+	border:#ccc 1px solid;
+	border-collapse:separate;
+ 
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+ 
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+ 
+.simple-little-table th {
+	font-weight:bold;
+	padding:21px 60px 22px 60px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+ 
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+.simple-little-table th:first-child{
+	text-align: left;
+	padding-left:60px;
+}
+.simple-little-table tr:first-child th:first-child{
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+.simple-little-table tr:first-child th:last-child{
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+.simple-little-table tr{
+	text-align: center;
+	padding-left:20px;
+}
+.simple-little-table tr td:first-child{
+	text-align: left;
+	padding-left:20px;
+	border-left: 0;
+}
+.simple-little-table tr td {
+	padding:18px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+ 
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+.simple-little-table tr:nth-child(even) td{
+	background: #f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+.simple-little-table tr:last-child td{
+	border-bottom:0;
+}
+.simple-little-table tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.simple-little-table tr:last-child td:last-child{
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+.simple-little-table tr:hover td{
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+	background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);
+}
+ 
+.simple-little-table a:link {
+	color: #666;
+	font-weight: bold;
+	text-decoration:none;
+}
+.simple-little-table a:visited {
+	color: #999999;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*������ ������� � ����� ����� � ������� � �������������*/
+a.button13 {
+    margin-bottom: 10px;
+  display: inline-block;
+  width: 15em;
+  font-size: 80%;
+  color: rgba(255,255,255,.9);
+  text-shadow: #2e7ebd 0 1px 2px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.1;
+  white-space: pre-line;
+  padding: .7em 0;
+  border: 1px solid;
+  border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
+  border-radius: 6px;
+  outline: none;
+  background: #60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);
+  box-shadow: inset rgba(255,255,255,.5) 1px 1px;
+}
+a.button13:first-line{
+  font-size: 170%;
+  font-weight: 700;
+}
+a.button13:hover {
+  color: rgb(255,255,255);
+  background-image: linear-gradient(#9dc7e7, #74afdd 50%, #378bce);
+}
+a.button13:active {
+  color: rgb(255,255,255);
+  border-color: #2970a9;
+  background-image: linear-gradient(#5796c8, #6aa2ce);
+  box-shadow: none;
+}
+
+
+
+.button7 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+} 
+.button7:hover { background: rgb(53, 167, 110); }
+.button7:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+
+/*__________________________________________________________________________*/
+
+.title-section {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+
+/*.title-section > span {
+  width: 130px;
+  display: inline-block;
+  height: 1px;
+  border-top: 1px dotted #dddddd;
+  position: relative;
+  margin: 0 0 20px;
+}
+.title-section > span:before {
+  content: '';
+  position: absolute;
+  width: 47px;
+  height: 7px;
+  left: 50%;
+  margin-left: -24px;
+  top: -4px;
+  background: url('../images/pin2.png') center center no-repeat;
+}*/
+
+
+
+#contact-section .contact-info {
+	margin-top: 200px;
+  background: rgb(229,224,209);;
+}
+#contact-section .contact-info .title-section {
+  margin-bottom: 40px;
+}
+#contact-section .contact-info .contact-info-box {
+  text-align: center;
+}
+#contact-section .contact-info .contact-info-box span {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  background: #4fc1e9;
+  margin: 0 0 20px;
+}
+#contact-section .contact-info .contact-info-box span i {
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 100px;
+}
+#contact-section .contact-info .contact-info-box h2 {
+  color: #222222;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 0px;
+}
+#contact-section .contact-info .contact-info-box p {
+  margin-bottom: 20px;
+  margin-top: 15px
+}
+.ourfooter img
+{
+	height:70px;
+	width:70px;
+}
+
+
+/* ============ FAQ ============= */
+a, a:hover, a:focus {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.padding{
+	padding-bottom:100px;
+	padding-top:100px;
+}
+.heading_space{
+	margin-bottom:50px;
+}
+
+.half_space{
+	margin-bottom:25px;
+}
+.faq_wrapper .items > li > a{ font-size:16px;}
+.faq_wrapper .items > li > a:hover, .faq_wrapper .items > li > a.expanded,
+.service_wrapper .items > li > a:hover ,
+.service_wrapper .items > li > a.expanded{
+	-moz-transition: all 0.3s ease-in-out;
+  -ms-transition:all 0.3s ease-in-out;
+  -o-transition:all 0.3s ease-in-out;
+  -webkit-transition:all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+}
+#faq {}
+.faq_wrapper {
+  position: relative;
+  background-color:#C0E7F1;
+}
+.faq_wrapper .items {}
+.faq_wrapper .items > li > a{
+  display: block;
+  font-size: 20px;
+  padding-bottom: 25px;
+  padding-left:25px;
+  margin-left:3px;
+  border-left:1px solid #a1a1a1;
+  font-weight:bold;
+  position:relative;
+}
+.faq_wrapper .items > li:last-child > a{ padding-bottom:0; }
+.faq_wrapper .items > li > a::before{
+  background: #a1a1a1;
+  border: 1px solid #a1a1a1;
+  border-radius: 100%;
+  box-shadow: 0 0 0 2px #fff inset;
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin-right:20px;
+  position: absolute;
+  left:-5px;
+}
+.itemHover{
+  color: #fff;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -o-transition: background-color 0.4s ease-in-out;
+  -moz-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+}
+.faq_wrapper .items > li > a:hover{ color: #e25111; }
+.faq_wrapper .items > li > a.expanded{
+  color: #e25111;
+  padding-bottom:0;
+}
+.faq_wrapper .items > li > a.expanded::before,
+.faq_wrapper .items > li > a:hover::before{
+  content: "";
+  background:#e25111;
+  border-color:#e25111;
+}
+.faq_wrapper  .sub-items p{ position: relative; }
+.faq_wrapper .sub-items{
+  display: none;
+  padding-left:30px;
+  padding-bottom:25px;
+  padding-top:25px;
+  margin-left:3px;
+  border-left:1px solid #a1a1a1;
+}
+.faq_wrapper .items > li:last-child .sub-items{ padding-bottom:0;}
+/* ============ FAQ Ends ============= */
+
+/*///////////////////////////// GO TOP ///////////////////////////////*/
+#back-top.show {
+    opacity: 1;
+}
+#back-top {
+    bottom: 80px;
+    position: fixed;
+    right: 25px;
+    z-index: 800;
+    background: #007FB7;
+    color: #fff;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 45px;
+    opacity: 0;
+}
+/*///////////////// STRELKA IN GO TOP ////////////////////////*/ 
+
+@font-face{font-family:'FontAwesome';
+src:url('../fonts/fontawesome-webfont.eot?v=4.5.0');
+src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'),
+url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'),
+url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'),
+url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'),
+url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+font-weight:normal;
+font-style:normal}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-2x {
+    font-size: 2em;
+}
+.fa-angle-up:before {
+    content: "\f106";
+}
+/*///////////////////////////// END GO TOP///////////////////////////////*/
+

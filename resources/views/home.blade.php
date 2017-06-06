@@ -2,9 +2,9 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-10">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Добавление изображения</div>
+                    <div class="panel-heading">Добавление товара</div>
                     <div class="panel-body">
                         @if (count($errors)>0)
 							<div class="alert alert-danger">
@@ -39,14 +39,15 @@
 									<option value="11">Бонбоньерки</option>
 								</select>	
 							</div>
-                            <button type="submit" class="btn btn-default">Добавить</button>
+							<!--<a href="#" class="button7"><button type="submit">Добавить</button></a>-->
+                            <button type="submit" class="button7">Добавить</button>
                         </form>
 						<div class='galery'>
 							@foreach ($all as $one)
 							<div class='product'>
 								<div class='menu'>			
-									<a href="{{asset('home/edit/'.$one->id)}}" class='btn btn-block btn-default'>Редактировать</a>
-									<a href="{{asset('home/delete/'.$one->id)}}" class='btn btn-block btn-default'>Удалить</a>
+									<a href="{{asset('home/edit/'.$one->id)}}" class="button13">Редактировать</a>
+									<a href="{{asset('home/delete/'.$one->id)}}" class="button13">Удалить</a>
 								</div>
 								<div class='picture'>
 								@if($one->picture != '-')

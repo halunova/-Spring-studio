@@ -17,11 +17,13 @@ class CommentController extends Controller
     }
 	
 	public function postIndex(Requests\commentrequest $r){
+		if (Auth::guest()){
+			 $r['name']="Гость";
+		 }
+		 else{
+			$r['name']=Auth::user()->name;
+		 }
 		Comments::create($r->all());
 		return redirect('comment');
-	}
-        public function getIndex()
-	{
-		return view('comment');
 	}
 }

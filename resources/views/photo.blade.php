@@ -4,7 +4,7 @@
 						<div class='galery'>
 							@foreach ($all as $one)					
 								@if($one->picture != '-')
-									<a href="{{asset('media/photos/'.$one->picture)}}" target='_blank'><img src="{{asset('media/photos/'.$one->picture_small)}}"/><a/>
+									<a href="{{asset('photo/'.$one->id)}}" target='_self'><img src="{{asset('media/photos/'.$one->picture_small)}}"/><a/>
 								@endif	
 							@endforeach
 						</div>
